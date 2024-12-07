@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: static-website-final
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: static-website-final
+  template:
+    metadata:
+      labels:
+        app: static-website-final
+    spec:
+      containers:
+      - name: static-website-final
+        image: bhargavqwertyuiop/usecase-classic-pipeline-final:324
+        ports:
+        - containerPort: 80
