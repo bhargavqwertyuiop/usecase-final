@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: static-website-final
-        image: bhargavqwertyuiop/usecase-classic-pipeline-final:10
+        image: bhargavqwertyuiop/usecase-classic-pipeline-final:11
         ports:
         - containerPort: 80
