@@ -1,7 +1,7 @@
 BUILD_ID=$1
 
 echo "Updating image tag in ${DEPLOYMENT_FILE}.yaml..."
-sed -i "s|image: .*|image: bhargavqwertyuiop/usecase-classic-pipeline-final:${BUILD_ID}|" k8s-manifests/deployment.yaml
+sed -i "s|image: .*|image: usecasefinal.azurecr.io/myrepo/usecase-img:${BUILD_ID}|" k8s-manifests/deployment.yaml
 
 echo "Configuring Git user..."
 git config --global user.name '$(GIT_USER)'
