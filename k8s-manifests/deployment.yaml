@@ -15,7 +15,7 @@ spec:
       containers:
       - name: static-website-final
         image: usecasefinal.azurecr.io/myrepo/usecase-img:16
-      imagePullSecrets:
-      - name: acr-secret
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: acr-secret
