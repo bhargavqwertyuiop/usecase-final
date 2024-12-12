@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: static-website-final
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: static-website-final
