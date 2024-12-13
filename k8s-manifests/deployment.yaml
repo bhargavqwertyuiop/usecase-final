@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: static-website-final
-        image: usecasefinal.azurecr.io/myrepo/usecase-img:31
+        image: usecasefinal.azurecr.io/myrepo/usecase-img:29
         ports:
         - containerPort: 80
       imagePullSecrets:
