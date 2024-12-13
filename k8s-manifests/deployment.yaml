@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: static-website-final
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: static-website-final
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: static-website-final
-        image: usecasefinal.azurecr.io/myrepo/usecase-img:32
+        image: usecasefinal.azurecr.io/myrepo/usecase-img:31
         ports:
         - containerPort: 80
       imagePullSecrets:
